@@ -5,15 +5,21 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tensor-logic-ai-pytorch"
 version = "0.1.0"
-description = "Minimal Tensor Logic AI engine in PyTorch – Datalog reasoning and neural networks as tensor programs."
+description = "Minimal Tensor Logic AI engine in PyTorch – Datalog reasoning as tensor operations and neural networks in one framework."
 readme = "README.md"
 requires-python = ">=3.10"
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
 dependencies = [
-    "torch",
-    "numpy",
+  "torch",
+  "numpy",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "pytest",
+  "pytest",
 ]
+
+[tool.setuptools.packages.find]
+where = ["src"]
