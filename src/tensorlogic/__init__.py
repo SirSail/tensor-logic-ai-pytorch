@@ -10,3 +10,17 @@ Author: Jakub Żegliński
 License: MIT
 """
 __version__ = "0.1.0"
+
+from .core import TensorEquation, TensorProgram
+from .nn import MLPProgram, MLPConfig
+from .logic import Relation, Rule, Domain
+
+__all__ = [
+    "TensorEquation",
+    "TensorProgram",
+    "MLPProgram",
+    "MLPConfig",
+    "Relation",
+    "Rule",
+    "Domain",
+]
